@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Função muda avatar */
   mudaAvatar.addEventListener("click", function () {
     if (mudaAvatar.src.includes("avatar.png")) {
-      mudaAvatar.src = "../site-fulano-com-JS/images/avatar2.png";
+      mudaAvatar.src = "../ativprog5/images/avatar2.png";
     } else {
-      mudaAvatar.src = "../site-fulano-com-JS/images/avatar.png";
+      mudaAvatar.src = "../ativprog5/images/avatar.png";
     }
   });
 
