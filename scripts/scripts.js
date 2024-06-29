@@ -14,13 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const listXP = document.getElementById("listXP");
   const subContato = document.getElementById("subContato");
   const enderecoContato = document.getElementById("enderecoContato");
+  const subXpPro = document.getElementById("subXpPro");
+  const paraXpPro = document.getElementById("paraXpPro");
 
   /* Função muda avatar */
   mudaAvatar.addEventListener("click", function () {
     if (mudaAvatar.src.includes("avatar.png")) {
-      mudaAvatar.src = "../site fulano com JS/images/avatar2.png";
+      mudaAvatar.src = "../site-fulano-com-JS/images/avatar2.png";
     } else {
-      mudaAvatar.src = "../site fulano com JS/images/avatar.png";
+      mudaAvatar.src = "../site-fulano-com-JS/images/avatar.png";
     }
   });
 
@@ -62,5 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   subContato.addEventListener("dblclick", function () {
     enderecoContato.style.display = "block";
+  });
+
+  /* Experiências Profissionais */
+  subXpPro.addEventListener("click", function () {
+    paraXpPro.style.display = "none";
+  });
+  subXpPro.addEventListener("dblclick", function () {
+    paraXpPro.style.display = "block";
   });
 });
